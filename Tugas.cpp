@@ -32,3 +32,13 @@ public:
     void showKelilingLayang(LayangLayang &l);
 };
 
+void LayangLayang::input()
+{
+    cout << "Input Layang-Layang\n";
+    cout << "Diagonal 1: "; cin >> d1;
+    cout << "Diagonal 2: "; cin >> d2;
+    cout << "Sisi 1: "; cin >> s1;
+    cout << "Sisi 2: "; cin >> s2;
+    cout << "Sisi 3: "; cin >> s3;
+    cout << "Sisi 4: "; cin >> s4;
+}
