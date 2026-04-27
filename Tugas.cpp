@@ -66,3 +66,8 @@ void BelahKetupat::luas()
 {
     cout << "Luas Belah Ketupat = " << (d1 * d2) / 2 << endl;
 }
+
+void BelahKetupat::keliling()
+{
+    cout << "Keliling Belah Ketupat = " << (4 * sisi) << endl;
+}
