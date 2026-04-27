@@ -52,3 +52,12 @@ void LayangLayang::keliling()
 {
     cout << "Keliling Layang-Layang = " << (s1 + s2 + s3 + s4) << endl;
 }
+
+// Belah Ketupat
+void BelahKetupat::input()
+{
+    cout << "\nInput Belah Ketupat\n";
+    cout << "Diagonal 1: "; cin >> d1;
+    cout << "Diagonal 2: "; cin >> d2;
+    cout << "Sisi: "; cin >> sisi;
+}
