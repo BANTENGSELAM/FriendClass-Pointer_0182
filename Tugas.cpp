@@ -42,3 +42,8 @@ void LayangLayang::input()
     cout << "Sisi 3: "; cin >> s3;
     cout << "Sisi 4: "; cin >> s4;
 }
+
+void LayangLayang::luas()
+{
+    cout << "Luas Layang-Layang = " << (d1 * d2) / 2 << endl;
+}
