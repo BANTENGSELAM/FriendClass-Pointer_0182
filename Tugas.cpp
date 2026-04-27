@@ -72,7 +72,7 @@ void BelahKetupat::keliling()
 
 void BelahKetupat::showKelilingLayang(LayangLayang &l)
 {
-    cout << "Keliling Layang-Layang (akses friend) = "
+    cout << "Keliling Layang-Layang = "
          << (l.s1 + l.s2 + l.s3 + l.s4) << endl;
 }
 
