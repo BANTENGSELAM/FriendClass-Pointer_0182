@@ -61,3 +61,8 @@ void BelahKetupat::input()
     cout << "Diagonal 2: "; cin >> d2;
     cout << "Sisi: "; cin >> sisi;
 }
+
+void BelahKetupat::luas()
+{
+    cout << "Luas Belah Ketupat = " << (d1 * d2) / 2 << endl;
+}
