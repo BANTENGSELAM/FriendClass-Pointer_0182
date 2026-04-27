@@ -5,22 +5,21 @@ class BelahKetupat;
 class LayangLayang
 {
 private:
-    int d1, d2; // diagonal
-    int s1, s2, s3, s4; // sisi
+    int d1, d2; 
+    int s1, s2, s3, s4; 
 
 public:
     void input();
     void luas();
     void keliling();
 
-    // friend function dari class BelahKetupat
     friend void BelahKetupat::showKelilingLayang(LayangLayang &l);
 };
 
 class BelahKetupat
 {
 private:
-    int d1, d2; // diagonal
+    int d1, d2; 
     int sisi;
 
 public:
@@ -28,7 +27,6 @@ public:
     void luas();
     void keliling();
 
-    // friend function untuk akses LayangLayang
     void showKelilingLayang(LayangLayang &l);
 };
 
@@ -76,4 +74,22 @@ void BelahKetupat::showKelilingLayang(LayangLayang &l)
 {
     cout << "Keliling Layang-Layang (akses friend) = "
          << (l.s1 + l.s2 + l.s3 + l.s4) << endl;
+}
+
+int main()
+{
+    LayangLayang l;
+    BelahKetupat b;
+
+    l.input();
+    l.luas();
+    l.keliling();
+
+    b.input();
+    b.luas();
+    b.keliling();
+
+    b.showKelilingLayang(l);
+
+    return 0;
 }
